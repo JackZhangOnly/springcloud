@@ -14,6 +14,9 @@ public class SpringcloudConfigClientApplication {
 		SpringApplication.run(SpringcloudConfigClientApplication.class, args);
 	}
 
+	/**
+	 * 会根据spring.application.name和相应profile找到对应properties文件中的配置
+	 */
 	@Value("${author}")
 	String author;
 
