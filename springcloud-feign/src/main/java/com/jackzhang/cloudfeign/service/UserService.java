@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 /**OrderController
  * Created by Jack
  */
-@FeignClient(value = "eureka-user-service")
+@FeignClient(value = "eureka-user-service",fallback = UserServiceHystrix.class)
 public interface UserService {
 
     @RequestMapping(value = "/user/findUserById.do",method = RequestMethod.GET)

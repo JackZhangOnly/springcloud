@@ -6,4 +6,6 @@ package com.jackzhnag.cloudribbon.service;
 public interface UserService {
 
     public String findUserById(String userId);
+
+
 }
